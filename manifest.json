@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "name": "NeoExamShield",
+  "version": "1.0.0",
+  "description": "Prevents malpractice by identifying and blocking third-party browser extensions during tests on the Iamneo portal.",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": [
+      "rise/Phoenix7k2m.js",
+      "rise/Eclipse8q4z.js",
+      "rise/Vortex1h9s.js",
+      "rise/Nexus4t8w.js",
+      "rise/Zenith3n6r.js",
+      "rise/Apex5j2v.js",
+      "rise/Catalyst2m7b.js",
+      "metadata.json",
+      "rules.json"
+    ],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
+  "permissions": [
+    "management",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyXKMSllCpa1zHLw0m7CbO1iAsi0iwQ5Ij45LbZsuvVnmmL0ahjrv+Rfbks1gZ2rE3nqJCvbyT9VUNMGlW9a09BTlRzrm9RhqaAdN6Mg4Y1fEdwQ6fB/UZG5eGEHKUmilxZrkfgfqVwPauLyIYBxTTyIJcYBQvg4mY1WutMpliP2Xbyva2f+t8iiXDer1lvqprNSbFv15bkwz6G5TJxTmvfK/yWKZUqPuI14WPyeo4KO5OA6+5aXONWw6S62n0D8LbadlkQMJM/Tn24tKAjSST0WpIViOn/rNOd/p1lTlrtXD9NkF3jDLblo+H0UwuItl+qhZd2why9tuejHGKWnS/wIDAQAB",
+  "externally_connectable": {
+    "matches": ["http://*/*", "https://*/*"]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "rise/Vortex1h9s.js",
+        "rise/Nexus4t8w.js",
+        "rise/Zenith3n6r.js",
+        "rise/Quantum9x5p.js",
+        "rise/Catalyst2m7b.js",
+        "contentScript.js"
+      ],
+      "run_at": "document_start",
+      "exclude_matches": [
+        "*://*.discord.com/*",
+        "*://*.figma.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "version_name": "1.0.0"
+}
