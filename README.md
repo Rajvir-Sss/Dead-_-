@@ -59,7 +59,7 @@ A comprehensive Chrome extension providing AI-powered assistance, MCQ support an
 | Shortcut | Description |
 |----------|-------------|
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd> | MCQ for Iamneo portal |
-| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> | AI-powered Coding Answers |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | AI-powered Coding Answers |
 | <kbd>Alt</kbd> + <kbd>C</kbd> | Toggle AI Chatbot |
 
 ---
