@@ -4,7 +4,7 @@
 - DM Telegram: [@unknwnxrajvir](https://t.me/unknwnxrajvir)
 - Telegram Channel: [Telegram Channel](https://t.me/suckneo)
 
-ONLY NEO BROWSER BYPASS IS PAID OTHER ALL NEO NORMAL TESTS ARE WORKING FREE WITH MOST ACCURATE ANSWERS FOR UR CODING / MCQ Solutions
+**ONLY NEO BROWSER BYPASS IS PAID OTHER ALL NEO/EXAMLY's NORMAL TESTS ARE WORKING FREE WITH MOST ACCURATE ANSWERS FOR UR CODING / MCQ Solutions**
 
 ---
 # 🚀 SkNeo Extension
