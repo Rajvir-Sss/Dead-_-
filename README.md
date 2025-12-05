@@ -13,7 +13,7 @@
 
 **Complete Exam Companion for Iamneo Portal**
 
-A comprehensive Chrome extension providing AI-powered assistance, MCQ support and advanced tools for a IamNeo/Examly seamless exam experience.
+A comprehensive Chrome extension providing AI-powered assistance, MCQ/Coding support with Accurate answers for a IamNeo/Examly seamless exam experience.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](manifest.json)
@@ -27,10 +27,10 @@ A comprehensive Chrome extension providing AI-powered assistance, MCQ support an
 ### 🎯 Core Features
 - **🤖 AI-Powered Chatbot** - Integrated AI chatbot for instant guidance
 - **📝 MCQ Helper** - Get support for multiple choice questions
-- **🔒 Exam Companion Mode** - Works with IamNeo/Examly exam environments.
+- **🔒 Compatible** - Works with IamNeo/Examly exam environments.
 
 ### 🛠️ Advanced Tools
-- **🔍 AI Search** - Search for answers and code snippets with AI
+- **🔍 AI Search** - Search for answers including all whitelist , code snippets and testcases with AI 
 - **📋 Custom Paste** - Paste content even when standard paste is unavailable
 - **🪟 Tab Management** - Manages tab switching Restrictions.
 - **⚡ Keyboard Shortcuts** - Quick access to all features
@@ -120,7 +120,7 @@ For support, questions, or feedback:
 
 ## 🎉 Acknowledgments
 
-Based on NeoPass framework with extensive enhancements and all features integrated.
+Based on [NeoPass](https://github.com/Max-Eee/NeoPass) framework with extensive enhancements and all features integrated.
 
 ---
 
