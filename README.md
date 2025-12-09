@@ -1,17 +1,17 @@
 # 🚨 To Surpass/Bypass Neo Browser Enabled Testts
 
-**Join Telegram to Purchase License**
+**Join Telegram to Purchase License 50% Offer is Going on Join or DM Fast Until 12th December ( Dont Miss it )**
 - DM Telegram: [@unknwnxrajvir](https://t.me/unknwnxrajvir)
 - Telegram Channel: [Telegram Channel](https://t.me/suckneo)
 
 **ONLY NEO BROWSER BYPASS IS PAID OTHER ALL NEO/EXAMLY's NORMAL TESTS ARE WORKING FREE WITH MOST ACCURATE ANSWERS FOR UR CODING / MCQ Solutions**
 
 ---
-# 🚀 SkNeo Extension
+# 🚀 SukNeo Extension
 
 <div align="center">
 
-**Complete Exam Companion for Iamneo Portal**
+**Complete Exam Companion for IamNeo Portal**
 
 A comprehensive Chrome extension providing AI-powered assistance, MCQ/Coding support with Accurate answers for a IamNeo/Examly seamless exam experience.
 
@@ -32,7 +32,7 @@ A comprehensive Chrome extension providing AI-powered assistance, MCQ/Coding sup
 ### 🛠️ Advanced Tools
 - **🔍 AI Search** - Search for answers including all whitelist , code snippets and testcases with AI 
 - **📋 Custom Paste** - Paste content even when standard paste is unavailable
-- **🪟 Tab Management** - Manages tab switching Restrictions.
+- ** Tab Management** - Manages tab switching Restrictions.
 - **⚡ Keyboard Shortcuts** - Quick access to all features
 ---
 
@@ -61,8 +61,8 @@ A comprehensive Chrome extension providing AI-powered assistance, MCQ/Coding sup
 | Shortcut | Description |
 |----------|-------------|
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd> | MCQ for Iamneo portal |
-| <kbd>Alt</kbd> + <kbd>S</kbd>  | AI-powered Coding Answers |
-| <kbd>Alt</kbd> + <kbd>A</kbd> | AI-powered Coding Answers(Backup) |
+| <kbd>Alt</kbd> + <kbd>A</kbd>  | AI-powered Coding Answers (Primary) |
+| <kbd>Alt</kbd> + <kbd>S</kbd> | AI-powered Coding Answers(Backup) |
 | <kbd>Alt</kbd> + <kbd>C</kbd> | Toggle AI Chatbot |
 
 ---
