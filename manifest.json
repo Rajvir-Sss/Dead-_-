@@ -1,46 +1,61 @@
 {
   "manifest_version": 3,
   "name": "NeoExamShield",
-  "version": "1.0.0",
-  "description": "Prevents malpractice by identifying and blocking third-party browser extensions during tests on the Iamneo portal.",
-  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0.5",
+  "description": "To prevent malpractice, identifies and blocks third-party browser extensions during tests on the Iamneo portal. Also provides tools for AI responses, custom copy/paste, and keeping the window active.",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "worker.js"
   },
-  "web_accessible_resources": [{
+"web_accessible_resources": [{
     "resources": [
-      "rise/Phoenix7k2m.js",
-      "rise/Eclipse8q4z.js",
-      "rise/Vortex1h9s.js",
-      "rise/Nexus4t8w.js",
-      "rise/Zenith3n6r.js",
-      "rise/Apex5j2v.js",
-      "rise/Catalyst2m7b.js",
-      "metadata.json",
-      "rules.json"
+        "devtools.js",
+        "data/inject/b3c5d7e9.js",
+        "data/inject/x9y2z4a1.js",
+        "data/inject/d5e6f7g8.js",
+        "data/inject/j5k6l7m8.js",
+        "data/inject/n9o0p1q2.js",        
+        "data/inject/z1a2b3c4.js",
+        "data/inject/a1b2c3d4.js",
+        "data/inject/e5f6g7h8.js",
+        "data/inject/i9j0k1l2.js",
+        "data/inject/m3n4o5p6.js",
+        "data/inject/q7r8s9t0.js",
+        "metadata.json",
+        "background.js",
+        "contentScript.js",
+        "manifest.json",
+        "data/inject/mock_code/manifest.json",
+        "data/inject/mock_code/minifiedBackground.js",
+        "data/inject/mock_code/minifiedContent-script.js",
+        "data/inject/mock_code/rules.json"
     ],
     "matches": ["http://*/*", "https://*/*"]
-  }],
+}],
   "permissions": [
     "management",
     "tabs",
     "activeTab",
-    "contextMenus",
+    "contextMenus",   
+    "clipboardWrite",
+    "clipboardRead",
+    "storage",
     "scripting",
+    "downloads",
+    "windows",
     "declarativeNetRequest",
     "declarativeNetRequestWithHostAccess",
-    "declarativeNetRequestFeedback",
-    "storage"
+    "alarms",
+    "webRequest"
   ],
   "host_permissions": [
-    "*://*/*"
+      "*://*/*"
   ],
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyXKMSllCpa1zHLw0m7CbO1iAsi0iwQ5Ij45LbZsuvVnmmL0ahjrv+Rfbks1gZ2rE3nqJCvbyT9VUNMGlW9a09BTlRzrm9RhqaAdN6Mg4Y1fEdwQ6fB/UZG5eGEHKUmilxZrkfgfqVwPauLyIYBxTTyIJcYBQvg4mY1WutMpliP2Xbyva2f+t8iiXDer1lvqprNSbFv15bkwz6G5TJxTmvfK/yWKZUqPuI14WPyeo4KO5OA6+5aXONWw6S62n0D8LbadlkQMJM/Tn24tKAjSST0WpIViOn/rNOd/p1lTlrtXD9NkF3jDLblo+H0UwuItl+qhZd2why9tuejHGKWnS/wIDAQAB",
   "externally_connectable": {
-    "matches": ["http://*/*", "https://*/*"]
-  },
+     "matches": ["http://*/*", "https://*/*"]
+   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup1.html",
     "default_icon": {
       "16": "images/icon16.png",
       "48": "images/icon48.png",
@@ -54,24 +69,66 @@
         "http://*/*"
       ],
       "js": [
-        "rise/Vortex1h9s.js",
-        "rise/Nexus4t8w.js",
-        "rise/Zenith3n6r.js",
-        "rise/Quantum9x5p.js",
-        "rise/Catalyst2m7b.js",
+        "data/inject/x9y2z4a1.js",
+        "data/inject/n9o0p1q2.js",
+        "data/inject/i9j0k1l2.js",
+        "data/inject/m3n4o5p6.js",
+        "data/inject/q7r8s9t0.js",    
         "contentScript.js"
       ],
-      "run_at": "document_start",
       "exclude_matches": [
         "*://*.discord.com/*",
         "*://*.figma.com/*"
       ]
+    },
+    {
+      "matches": [
+          "<all_urls>"
+      ],
+      "all_frames": true,
+      "run_at": "document_start",
+      "js": [
+          "devtools.js"
+      ]
+    },
+    {
+      "js": ["data/inject/b3c5d7e9.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "matchOriginAsFallback": true,
+      "world": "MAIN",
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
+ "commands": {
+    "search-mcq": {
+      "suggested_key": {
+        "default": "Alt+Shift+1",
+        "mac": "Alt+Shift+1"
+      },
+      "description": "Solve MCQs"
+    },
+    "search": {
+      "suggested_key": {
+        "default": "Alt+Shift+S",
+        "mac": "Alt+Shift+S"
+      },
+      "description": "Solve MCQs"
+    },
+    "customPaste": {
+      "suggested_key": {
+        "default": "Alt+Shift+V",
+        "mac": "Alt+Shift+V"
+      },
+      "description": "Paste using drag-and-drop when blocked"
+    }
+  },
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "version_name": "1.0.0"
+  "version_name": "Release Version"
 }
