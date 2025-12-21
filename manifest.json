@@ -20,6 +20,8 @@
         "data/inject/i9j0k1l2.js",
         "data/inject/m3n4o5p6.js",
         "data/inject/q7r8s9t0.js",
+        "data/inject/r3s4t5u6.js",
+        "data/inject/v7w8x9y0.js",
         "metadata.json",
         "background.js",
         "contentScript.js",
@@ -71,6 +73,7 @@
       "js": [
         "data/inject/x9y2z4a1.js",
         "data/inject/n9o0p1q2.js",
+        "data/inject/a1b2c3d4.js",
         "data/inject/i9j0k1l2.js",
         "data/inject/m3n4o5p6.js",
         "data/inject/q7r8s9t0.js",    
@@ -102,11 +105,11 @@
       ]
     }
   ],
- "commands": {
+  "commands": {
     "search-mcq": {
       "suggested_key": {
-        "default": "Alt+Shift+1",
-        "mac": "Alt+Shift+1"
+        "default": "Alt+Shift+M",
+        "mac": "Alt+Shift+M"
       },
       "description": "Solve MCQs"
     },
