@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NeoExamShield",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "To prevent malpractice, identifies and blocks third-party browser extensions during tests on the Iamneo portal. Also provides tools for AI responses, custom copy/paste, and keeping the window active.",
   "background": {
     "service_worker": "worker.js"
@@ -9,6 +9,7 @@
 "web_accessible_resources": [{
     "resources": [
         "devtools.js",
+        "data/inject/asj2524sa.js",
         "data/inject/b3c5d7e9.js",
         "data/inject/x9y2z4a1.js",
         "data/inject/d5e6f7g8.js",
@@ -71,11 +72,23 @@
         "http://*/*"
       ],
       "js": [
-        "data/inject/x9y2z4a1.js",
+        "data/inject/asj2524sa.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
         "data/inject/n9o0p1q2.js",
         "data/inject/a1b2c3d4.js",
         "data/inject/i9j0k1l2.js",
         "data/inject/m3n4o5p6.js",
+        "data/inject/d5e6f7g8.js",
         "data/inject/q7r8s9t0.js",    
         "contentScript.js"
       ],
@@ -103,7 +116,21 @@
       "matches": [
         "<all_urls>"
       ]
-    }
+    },
+    {
+      "js": ["data/inject/sdsaas2325.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "matchOriginAsFallback": true,
+      "world": "MAIN",
+      "matches": [
+        "<all_urls>",
+        "https://*.examly.io/*",
+        "https://*.vit.ac.in/*",
+        "https://app.codility.com/*"
+      ],
+      "exclude_matches": ["https://*.examly.io/result*","https://*/result"]
+    }    
   ],
   "commands": {
     "search-mcq": {
