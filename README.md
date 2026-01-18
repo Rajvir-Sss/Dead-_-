@@ -30,7 +30,7 @@ SukNeo is a lightweight Chrome extension built to help students navigate restric
 
 ## ✨ Features
 
-### Free — Bring Your Own API Key
+### Free
 - NeoExamShield bypass for  Examly/IamNeo checkers
 - AI-powered search for Questions with code like header and footer snippets
 - MCQ assistance which gives 100% Correct Answer
