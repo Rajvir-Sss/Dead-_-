@@ -686,6 +686,55 @@
             border-color: #4ade80;
         }
 
+        /* Platform selector radio buttons */
+        .platform-radio {
+            display: none;
+        }
+
+        .platform-label {
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            color: rgba(74, 222, 128, 0.6);
+            display: inline-block;
+        }
+
+        .platform-label:hover {
+            border-color: rgba(74, 222, 128, 0.6);
+            color: rgba(74, 222, 128, 0.8);
+        }
+
+        .platform-radio:checked + .platform-label {
+            background: rgba(74, 222, 128, 0.2);
+            border: 1px solid #4ade80;
+            color: #4ade80;
+        }
+
+        #macShortcuts {
+            display: none;
+        }
+
+        #platformMacRadio:checked ~ .shortcuts-card #macShortcuts {
+            display: block;
+        }
+
+        #platformMacRadio:checked ~ .shortcuts-card #windowsShortcuts {
+            display: none;
+        }
+
+        #platformWindowsRadio:checked ~ .shortcuts-card #windowsShortcuts {
+            display: block;
+        }
+
+        #platformWindowsRadio:checked ~ .shortcuts-card #macShortcuts {
+            display: none;
+        }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -865,36 +914,89 @@
 
         <!-- Settings Tab -->
         <div id="settings-tab" class="tab-content">
+            <!-- Hidden radio inputs for controlling shortcuts display -->
+            <input type="radio" id="platformWindowsRadio" name="platform" class="platform-radio" checked>
+            <input type="radio" id="platformMacRadio" name="platform" class="platform-radio">
+
+            <!-- Platform Selector -->
+            <div class="toggle-container mb-4">
+                <div class="toggle-header">
+                    <span class="toggle-label">🖥️ Platform</span>
+                    <div style="display: flex; gap: 8px;">
+                        <label for="platformWindowsRadio" class="platform-label">Windows/Linux</label>
+                        <label for="platformMacRadio" class="platform-label">macOS</label>
+                    </div>
+                </div>
+                <div class="toggle-info" style="text-align: center; margin-top: 8px;">
+                    Select your operating system to see the correct keyboard shortcuts
+                </div>
+            </div>
+
             <div class="shortcuts-card">
                 <h3>Quick Shortcuts</h3>
-                <div class="shortcut-item">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <span>🎯 Answer Fetcher(May Work in Some Coding Questions But 100% Correct for MCQs)</span>
-                        <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(From Neo API)</span>
+                
+                <!-- Windows/Linux Shortcuts -->
+                <div id="windowsShortcuts">
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>🎯 Answer Fetcher(May Work in Some Coding Questions But 100% Correct for MCQs)</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(From Neo API)</span>
+                        </div>
+                        <span class="shortcut-key">Ctrl+Alt</span>
                     </div>
-                    <span class="shortcut-key">Alt+Shift+1</span>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>⚡ AI Answer Fetcher</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Hot Special SukNeo API)</span>
+                        </div>
+                        <span class="shortcut-key">Alt+A</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>🤖 AI Answer Fetcher for Coding</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Gemini)</span>
+                        </div>
+                        <span class="shortcut-key">Alt+S</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>⚡ AI Answer Fetcher For Coding (Char By Char)</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Types One By One Letters)</span>
+                        </div>
+                        <span class="shortcut-key">Alt+Y</span>
+                    </div>
                 </div>
-                <div class="shortcut-item">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <span>⚡ AI Answer Fetcher</span>
-                        <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Hot Special SukNeo
-                            API)</span>
+                
+                <!-- macOS Shortcuts -->
+                <div id="macShortcuts">
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>🎯 Answer Fetcher(May Work in Some Coding Questions But 100% Correct for MCQs)</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(From Neo API)</span>
+                        </div>
+                        <span class="shortcut-key">Control+Z</span>
                     </div>
-                    <span class="shortcut-key">Alt+A</span>
-                </div>
-                <div class="shortcut-item">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <span>🤖 AI Answer Fetcher for Coding</span>
-                        <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Gemini)</span>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>⚡ AI Answer Fetcher</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Hot Special SukNeo API)</span>
+                        </div>
+                        <span class="shortcut-key">Control+Q</span>
                     </div>
-                    <span class="shortcut-key">Alt+S</span>
-                </div>
-                <div class="shortcut-item">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <span>⚡ AI Answer Fetcher</span>
-                        <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Custom API Configure in Dashboard)</span>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>🤖 AI Answer Fetcher for Coding</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Gemini)</span>
+                        </div>
+                        <span class="shortcut-key">Control+S</span>
                     </div>
-                    <span class="shortcut-key">Alt+C</span>
+                    <div class="shortcut-item">
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <span>⚡ AI Answer Fetcher For Coding (Char By Char)</span>
+                            <span style="font-size: 0.75rem; color: rgba(74, 222, 128, 0.6);">(Types One By One Letters)</span>
+                        </div>
+                        <span class="shortcut-key">Control+Y</span>
+                    </div>
                 </div>
             </div>
 
