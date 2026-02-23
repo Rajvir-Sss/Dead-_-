@@ -9,6 +9,9 @@
 
 # SukNeo — Free & Pro Exam Companion
 
+**Subscription (Only required for Premium Extension(AI Answer Retrival and many more) )**
+Visit: https://sukneo.vercel.app/dashboard
+
 **Subscription (Only required for NeoBrowser bypass)**
 Visit: https://sukneo.vercel.app/subscriptions
 
@@ -16,7 +19,7 @@ Contact & Support:
 - Telegram: [@unknwnxrajvir](https://t.me/unknwnxrajvir)
 - Telegram Channel: [Telegram Channel](https://t.me/suckneo)
 
-> **Note:** The NeoBrowser bypass is a paid feature. All other IamNeo/Examly helpers (MCQ, coding assistance, paste/tab bypasses) are available for free.
+> **Note:** The NeoBrowser bypass is a paid feature. All other IamNeo/Examly helpers (MCQ, coding assistance, paste/tab bypasses) are available for very very low Price.
 
 ---
 
@@ -32,18 +35,16 @@ SukNeo is a lightweight Chrome extension built to help students navigate restric
 
 ### Free
 - NeoExamShield bypass for  Examly/IamNeo checkers
-- AI-powered search for Questions with code like header and footer snippets
-- MCQ assistance which gives 100% Correct Answer
 - Paste Un-Restricted , to allow pasting when blocked
 - Tab-switch bypass to reduce unwanted navigation restrictions
-- Works with all endpoints
 
 > **Tip:** If your network blocks AI providers, use a proxy or consider upgrading to Pro for managed AI access.
 
 ### Pro — Managed & Hassle-free
 - All Free features included
+- MCQ assistance which gives 100% Correct Answer
 - Managed AI by SukNeo (Special Proxy Server)
-- NeoBrowser access for advanced bypasses 
+- AI-powered search for Questions with code like header and footer snippets
 - Works even when AI providers are blocked (no network limitations)
 - Higher request limits and priority support
 
@@ -68,7 +69,7 @@ SukNeo is a lightweight Chrome extension built to help students navigate restric
 > **Note:** If your institution blocks AI providers, the extension may not work with your API key. Try a VPN or upgrade to Pro for managed AI.
 
 ### For Pro Users
-1. Subscribe at https://sukneo.vercel.app/subscriptions.
+1. Subscribe at https://sukneo.vercel.app/dashboard.
 2. Visit [FBY](https://sukneo.vercel.app/fby?post=instructions-for-premium-users-to-utilize-sukneo-browser-tab-switch-unlocked) for Instructions.
 3. Enjoy managed AI and bypass tools with Tab-Switch Bypassed and all other features.
 
