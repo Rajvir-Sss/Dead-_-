@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NeoExamShield",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "To prevent malpractice, identifies and blocks third-party browser extensions during tests on the Iamneo portal. Also provides tools for AI responses, custom copy/paste, and keeping the window active.",
   "background": {
     "service_worker": "worker.js"
@@ -89,9 +89,23 @@
         "data/inject/i9j0k1l2.js",
         "data/inject/m3n4o5p6.js",
         "data/inject/d5e6f7g8.js",
-        "data/inject/q7r8s9t0.js",    
+        "data/inject/q7r8s9t0.js",
         "contentScript.js"
       ],
+      "exclude_matches": [
+        "*://*.discord.com/*",
+        "*://*.figma.com/*"
+      ]
+    },
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "data/inject/dd2301sjd.js"
+      ],
+      "all_frames": true,
       "exclude_matches": [
         "*://*.discord.com/*",
         "*://*.figma.com/*"
