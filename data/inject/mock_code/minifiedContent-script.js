@@ -1,1 +1,0 @@
-window.addEventListener("message",function(e){e.source===window&&"extension"===e.data.target&&chrome.runtime.sendMessage(e.data.message,e=>{window.postMessage({source:"extension",response:e},"*")})});
